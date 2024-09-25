@@ -29,8 +29,7 @@ private:
 
 	void PopulateCommandList();
 
-	void ExecuteAnalyticQuery(const std::string& query);
-	std::string BuildAnalyticAddRowQuery(std::string tableName, std::string message);
+	void ExecuteAnalyticQuery(const std::string table, const std::string message);
 	
 	void OnReciveAnyMessage(TgBot::Message::Ptr message);
 

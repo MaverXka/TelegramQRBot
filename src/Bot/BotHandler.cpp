@@ -82,9 +82,28 @@ void BotHandler::PopulateCommandList()
 {
 }
 
-void BotHandler::ExecuteAnalyticQuery(const std::string& query)
+void BotHandler::ExecuteAnalyticQuery(const std::string table, const std::string message)
 {
-    PGresult* res = PQexec(AnalyticDB, query.c_str());
+    string query = R"(
+DO $$
+DECLARE
+    v_today DATE := CURRENT_DATE;
+    v_url VARCHAR := $1; -- Теперь используем параметр вместо прямой вставки
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM )" + table + R"( WHERE date = v_today) THEN
+        INSERT INTO )" + table + R"( (date, urls) VALUES (v_today, ARRAY[v_url]);
+    ELSE
+        UPDATE )" + table + R"( 
+        SET urls = array_append(urls, v_url)
+        WHERE date = v_today AND NOT (v_url = ANY(urls));
+    END IF;
+END $$;
+)";
+
+    const char* paramValues[1];
+    paramValues[0] = message.c_str();
+
+    PGresult* res = PQexecParams(AnalyticDB, query.c_str(), 1, NULL, paramValues, NULL, NULL, 0);
     if (PQresultStatus(res) != PGRES_COMMAND_OK) {
         Logger->LogMsg(LogVerb::FatalError, BOTHANDLERCATEGORY, string("Failed to execute analytic query: ") + PQerrorMessage(AnalyticDB));
         PQclear(res);
@@ -136,8 +155,7 @@ void BotHandler::OnReciveAnyMessage(TgBot::Message::Ptr message)
         }
 
         std::string table_name = Config::Get().GetAnalyticData().analyticTableName;
-        std::string query = BuildAnalyticAddRowQuery(table_name, message->text);
-        ExecuteAnalyticQuery(query);
+        ExecuteAnalyticQuery(table_name, message->text);
 
 
     
@@ -197,24 +215,6 @@ std::string BotHandler::isQRCodeExists(const std::string URL, bool& IsFound)
     return res;
 }
 
-std::string BotHandler::BuildAnalyticAddRowQuery(std::string tableName, std::string message)
-{
-    return R"(
-DO $$
-DECLARE
-    v_today DATE := CURRENT_DATE;
-    v_url VARCHAR := ')" + message + R"(';
-BEGIN
-    IF NOT EXISTS (SELECT 1 FROM )" + tableName + R"( WHERE date = v_today) THEN
-        INSERT INTO )" + tableName + R"( (date, urls) VALUES (v_today, ARRAY[v_url]);
-    ELSE
-        UPDATE )" + tableName + R"( 
-        SET urls = array_append(urls, v_url)
-        WHERE date = v_today AND NOT (v_url = ANY(urls));
-    END IF;
-END $$;
-)";
-}
 
 void BotHandler::AddQRCode(const std::string URL, const std::string Filename)
 {
