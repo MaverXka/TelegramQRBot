@@ -88,7 +88,7 @@ void BotHandler::ExecuteAnalyticQuery(const std::string table, const std::string
 DO $$
 DECLARE
     v_today DATE := CURRENT_DATE;
-    v_url VARCHAR := $1; -- Теперь используем параметр вместо прямой вставки
+    v_url VARCHAR := $1;
 BEGIN
     IF NOT EXISTS (SELECT 1 FROM )" + table + R"( WHERE date = v_today) THEN
         INSERT INTO )" + table + R"( (date, urls) VALUES (v_today, ARRAY[v_url]);
