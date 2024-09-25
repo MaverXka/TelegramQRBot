@@ -33,11 +33,13 @@ private:
 	
 	void OnReciveAnyMessage(TgBot::Message::Ptr message);
 
-	void saveQRCodeAsPNG(const QrCode& qr, const std::string& filename);
+	void saveQRCodeAsPNG(const QrCode& qr, const std::string& filename, int qrCodeBorderSize);
 
 	std::unique_ptr<TgBot::Bot> tgBot;
 	std::vector<TgBot::BotCommand::Ptr> BotCommandList;
 	std::unordered_map<int64_t, bool> AwaitingLink;
+
+	int lQrCodeBorderSize = 4;
 	
 	/// <returns>Filename if exists</returns>
 	std::string isQRCodeExists(const std::string URL, bool& IsFound);

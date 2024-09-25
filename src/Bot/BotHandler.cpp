@@ -52,6 +52,8 @@ void BotHandler::Launch()
 {
     Config& cfg = Config::Get();
 
+    lQrCodeBorderSize = cfg.GetQRCodeBorderSize();
+
     tgBot = std::make_unique<TgBot::Bot>(cfg.GetBotToken());
 
     tgBot->getEvents().onAnyMessage([this](TgBot::Message::Ptr message) {
@@ -136,7 +138,7 @@ void BotHandler::OnReciveAnyMessage(TgBot::Message::Ptr message)
             boost::uuids::random_generator generator;
             boost::uuids::uuid qrcodeuuid = generator();
             string qrcodeid = boost::uuids::to_string(qrcodeuuid);
-            saveQRCodeAsPNG(qr, qrcodeid);
+            saveQRCodeAsPNG(qr, qrcodeid, lQrCodeBorderSize);
             AddQRCode(message->text.c_str(), qrcodeid);
 
             tgBot->getApi().sendMessage(message->chat->id, "There is your QR Code:");
@@ -158,10 +160,10 @@ string GetFinalQRCodeFilename(string Filename)
     return base_path.string();
 }
 
-void BotHandler::saveQRCodeAsPNG(const QrCode& qr, const std::string& filename) {
+void BotHandler::saveQRCodeAsPNG(const QrCode& qr, const std::string& filename, int qrCodeBorderSize) {
     int size = qr.getSize();
     int scale = 10;
-    int dim = size * scale;
+    int dim = (size + 2 * qrCodeBorderSize) * scale;
 
     std::vector<uint8_t> image(dim * dim, 0xFF);
 
@@ -170,7 +172,7 @@ void BotHandler::saveQRCodeAsPNG(const QrCode& qr, const std::string& filename) 
             if (qr.getModule(x, y)) {
                 for (int dy = 0; dy < scale; dy++) {
                     for (int dx = 0; dx < scale; dx++) {
-                        image[((y * scale + dy) * dim) + (x * scale + dx)] = 0x00;
+                        image[((y + qrCodeBorderSize) * scale + dy) * dim + (x + qrCodeBorderSize) * scale + dx] = 0x00;
                     }
                 }
             }

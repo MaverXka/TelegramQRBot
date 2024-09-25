@@ -40,15 +40,16 @@ private:
 		buffer << ConfigFile.rdbuf();
 
 		nlohmann::json data = nlohmann::json::parse(buffer);
-		botToken = data["telegramBotToken"];
 		try
 		{
+			botToken = data["telegramBotToken"];
 			analyticDBData.analyticHostServer = data["analyticHost"];
 			analyticDBData.analyticHostPort = data["analyticPort"];
 			analyticDBData.analyticUser = data["analyticUser"];
 			analyticDBData.analyticPassword = data["analyticPassword"];
 			analyticDBData.analyticDBName = data["analyticDBname"];
 			analyticDBData.analyticTableName = data["analyticTableName"];
+			qrCodeBorderSize = data["qrCodeBorderSize"];
 		}
 		catch(nlohmann::json::type_error& ex)
 		{
@@ -60,6 +61,7 @@ private:
 	~Config() = default;
 
 	std::string botToken;
+	int qrCodeBorderSize = 4;
 	AnalyticDBData analyticDBData;
 
 
@@ -70,6 +72,7 @@ public:
 
 	std::string GetBotToken() { return botToken; };
 	AnalyticDBData GetAnalyticData() { return analyticDBData; };
+	int GetQRCodeBorderSize() { return qrCodeBorderSize; };
 
 
 
