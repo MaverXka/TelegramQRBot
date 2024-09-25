@@ -85,29 +85,18 @@ void BotHandler::PopulateCommandList()
 void BotHandler::ExecuteAnalyticQuery(const std::string table, const std::string message)
 {
     string query = R"(
-DO $$
-DECLARE
-    v_today DATE := CURRENT_DATE;
-    v_url VARCHAR := $1;
-BEGIN
-    IF NOT EXISTS (SELECT 1 FROM )" + table + R"( WHERE date = v_today) THEN
-        INSERT INTO )" + table + R"( (date, urls) VALUES (v_today, ARRAY[v_url]);
-    ELSE
-        UPDATE )" + table + R"( 
-        SET urls = array_append(urls, v_url)
-        WHERE date = v_today AND NOT (v_url = ANY(urls));
-    END IF;
-END $$;
+    SELECT tg_bot_update($1, $2);   
 )";
 
-    const char* paramValues[1];
+    const char* paramValues[2];
     paramValues[0] = message.c_str();
+    paramValues[1] = table.c_str();
 
-    PGresult* res = PQexecParams(AnalyticDB, query.c_str(), 1, NULL, paramValues, NULL, NULL, 0);
-    if (PQresultStatus(res) != PGRES_COMMAND_OK) {
-        Logger->LogMsg(LogVerb::FatalError, BOTHANDLERCATEGORY, string("Failed to execute analytic query: ") + PQerrorMessage(AnalyticDB));
-        PQclear(res);
-    }
+    PGresult* res = PQexecParams(AnalyticDB, query.c_str(), 2, NULL, paramValues, NULL, NULL, 0);
+    //if (PQresultStatus(res) != PGRES_COMMAND_OK) {
+    //    Logger->LogMsg(LogVerb::FatalError, BOTHANDLERCATEGORY, string("Failed to execute analytic query: ") + PQerrorMessage(AnalyticDB));
+        //PQclear(res);
+    //}
     PQclear(res);
 }
 

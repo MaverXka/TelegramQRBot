@@ -90,6 +90,34 @@ Validator::Validator(sqlite3** db, AppLogger* NewLogger, PGconn** Connection) : 
 		//std::cerr << PQerrorMessage(analyticConnection) << std::endl;
 		PQclear(res);
 	}
+	string table_name = dbdata.analyticTableName;
+	string dfuncquery = R"(
+CREATE OR REPLACE FUNCTION tg_bot_update(p_url TEXT, p_table_name TEXT) RETURNS VOID AS $$
+DECLARE
+    record_exists BOOLEAN;
+    url_exists BOOLEAN;
+BEGIN
+    EXECUTE format('SELECT EXISTS (SELECT 1 FROM %I WHERE date = CURRENT_DATE)', p_table_name) INTO record_exists;
+
+    IF record_exists THEN
+        EXECUTE format('SELECT array_position(urls, $1) IS NOT NULL FROM %I WHERE date = CURRENT_DATE', p_table_name) INTO url_exists USING p_url;
+
+        IF NOT url_exists THEN
+            EXECUTE format('UPDATE %I SET urls = array_append(urls, $1) WHERE date = CURRENT_DATE', p_table_name) USING p_url;
+        END IF;
+    ELSE
+        EXECUTE format('INSERT INTO %I (date, urls) VALUES (CURRENT_DATE, ARRAY[$1])', p_table_name) USING p_url;
+    END IF;
+END;
+$$ LANGUAGE plpgsql;
+)";
+
+	PGresult* res2 = PQexec(analyticConnection, dfuncquery.c_str());
+	if (PQresultStatus(res2) != PGRES_COMMAND_OK) {
+		Logger->LogMsg(LogVerb::FatalError, VALIDATORLOG, string("Failed to execute validation analytic add func query: ") + string(PQerrorMessage(analyticConnection)));
+		//std::cerr << PQerrorMessage(analyticConnection) << std::endl;
+		PQclear(res2);
+	}
 
 	*Connection = analyticConnection;
 
