@@ -41,12 +41,19 @@ private:
 
 		nlohmann::json data = nlohmann::json::parse(buffer);
 		botToken = data["telegramBotToken"];
-		analyticDBData.analyticHostServer = data["analyticHost"];
-		analyticDBData.analyticHostPort = data["analyticPort"];
-		analyticDBData.analyticUser = data["analyticUser"];
-		analyticDBData.analyticPassword = data["analyticPassword"];
-		analyticDBData.analyticDBName = data["analyticDBname"];
-		analyticDBData.analyticTableName = data["analyticTableName"];
+		try
+		{
+			analyticDBData.analyticHostServer = data["analyticHost"];
+			analyticDBData.analyticHostPort = data["analyticPort"];
+			analyticDBData.analyticUser = data["analyticUser"];
+			analyticDBData.analyticPassword = data["analyticPassword"];
+			analyticDBData.analyticDBName = data["analyticDBname"];
+			analyticDBData.analyticTableName = data["analyticTableName"];
+		}
+		catch(nlohmann::json::type_error& ex)
+		{
+			std::cout << "Failed to init config: " << ex.what() << std::endl;
+		}
 
 	}
 
