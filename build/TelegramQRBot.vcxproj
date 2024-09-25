@@ -1,0 +1,651 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CB8EF71D-52C2-3A0A-B548-039CB11151EC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>TelegramQRBot</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">A:\TelegramQRBot\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TelegramQRBot.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TelegramQRBot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">A:\TelegramQRBot\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TelegramQRBot.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TelegramQRBot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">A:\TelegramQRBot\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TelegramQRBot.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TelegramQRBot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">A:\TelegramQRBot\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TelegramQRBot.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TelegramQRBot</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maver/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OS_WINDOWS;HAVE_CURL;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OS_WINDOWS;HAVE_CURL;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;C:\Users\maver\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;C:\Users\maver\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/maver/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary A:/TelegramQRBot/build/Debug/TelegramQRBot.exe -installedDir C:/Users/maver/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\libssl.lib;C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\libcrypto.lib;C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\boost_system-vc143-mt-gd-x64-1_85.lib;C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\libcurl-d.lib;C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\sqlite3.lib;C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\libpq.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>A:/TelegramQRBot/build/Debug/TelegramQRBot.lib</ImportLibrary>
+      <ProgramDataBaseFile>A:/TelegramQRBot/build/Debug/TelegramQRBot.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maver/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WINDOWS;HAVE_CURL;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WINDOWS;HAVE_CURL;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;C:\Users\maver\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;C:\Users\maver\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/maver/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary A:/TelegramQRBot/build/Release/TelegramQRBot.exe -installedDir C:/Users/maver/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\maver\vcpkg\installed\x64-windows\lib\libssl.lib;C:\Users\maver\vcpkg\installed\x64-windows\lib\libcrypto.lib;C:\Users\maver\vcpkg\installed\x64-windows\lib\boost_system-vc143-mt-x64-1_85.lib;C:\Users\maver\vcpkg\installed\x64-windows\lib\libcurl.lib;C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\sqlite3.lib;C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\libpq.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>A:/TelegramQRBot/build/Release/TelegramQRBot.lib</ImportLibrary>
+      <ProgramDataBaseFile>A:/TelegramQRBot/build/Release/TelegramQRBot.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maver/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WINDOWS;HAVE_CURL;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WINDOWS;HAVE_CURL;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;C:\Users\maver\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;C:\Users\maver\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/maver/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary A:/TelegramQRBot/build/MinSizeRel/TelegramQRBot.exe -installedDir C:/Users/maver/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\maver\vcpkg\installed\x64-windows\lib\libssl.lib;C:\Users\maver\vcpkg\installed\x64-windows\lib\libcrypto.lib;C:\Users\maver\vcpkg\installed\x64-windows\lib\boost_system-vc143-mt-x64-1_85.lib;C:\Users\maver\vcpkg\installed\x64-windows\lib\libcurl.lib;C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\sqlite3.lib;C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\libpq.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>A:/TelegramQRBot/build/MinSizeRel/TelegramQRBot.lib</ImportLibrary>
+      <ProgramDataBaseFile>A:/TelegramQRBot/build/MinSizeRel/TelegramQRBot.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/maver/vcpkg/installed/x64-windows/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WINDOWS;HAVE_CURL;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OS_WINDOWS;HAVE_CURL;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;C:\Users\maver\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maver\vcpkg\installed\x64-windows\include\server;A:\TelegramQRBot\src;C:\Users\maver\vcpkg\installed\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/Users/maver/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary A:/TelegramQRBot/build/RelWithDebInfo/TelegramQRBot.exe -installedDir C:/Users/maver/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>C:\Users\maver\vcpkg\installed\x64-windows\lib\libssl.lib;C:\Users\maver\vcpkg\installed\x64-windows\lib\libcrypto.lib;C:\Users\maver\vcpkg\installed\x64-windows\lib\boost_system-vc143-mt-x64-1_85.lib;C:\Users\maver\vcpkg\installed\x64-windows\lib\libcurl.lib;C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\sqlite3.lib;C:\Users\maver\vcpkg\installed\x64-windows\debug\lib\libpq.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>A:/TelegramQRBot/build/RelWithDebInfo/TelegramQRBot.lib</ImportLibrary>
+      <ProgramDataBaseFile>A:/TelegramQRBot/build/RelWithDebInfo/TelegramQRBot.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="A:\TelegramQRBot\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule A:/TelegramQRBot/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SA:/TelegramQRBot -BA:/TelegramQRBot/build --check-stamp-file A:/TelegramQRBot/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeCXXCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeSystem.cmake;A:\TelegramQRBot\build\CMakeFiles\cmake.verify_globs;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPostgreSQL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets-debug.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets-release.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonTargets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\postgresql\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">A:\TelegramQRBot\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule A:/TelegramQRBot/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SA:/TelegramQRBot -BA:/TelegramQRBot/build --check-stamp-file A:/TelegramQRBot/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeCXXCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeSystem.cmake;A:\TelegramQRBot\build\CMakeFiles\cmake.verify_globs;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPostgreSQL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets-debug.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets-release.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonTargets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\postgresql\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">A:\TelegramQRBot\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule A:/TelegramQRBot/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SA:/TelegramQRBot -BA:/TelegramQRBot/build --check-stamp-file A:/TelegramQRBot/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeCXXCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeSystem.cmake;A:\TelegramQRBot\build\CMakeFiles\cmake.verify_globs;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPostgreSQL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets-debug.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets-release.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonTargets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\postgresql\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">A:\TelegramQRBot\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule A:/TelegramQRBot/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SA:/TelegramQRBot -BA:/TelegramQRBot/build --check-stamp-file A:/TelegramQRBot/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeCCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeCXXCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeRCCompiler.cmake;A:\TelegramQRBot\build\CMakeFiles\3.30.2\CMakeSystem.cmake;A:\TelegramQRBot\build\CMakeFiles\cmake.verify_globs;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeFindDependencyMacro.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindBoost.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindOpenSSL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPostgreSQL.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\SelectLibraryConfigurations.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\BoostConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\BoostConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_assert\boost_assert-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_config\boost_config-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_headers\boost_headers-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_mp11\boost_mp11-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_predef\boost_predef-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets-debug.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets-release.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_system\boost_system-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_throw_exception\boost_throw_exception-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_variant2\boost_variant2-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-config-version.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-config.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\boost_winapi\boost_winapi-targets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets-debug.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets-release.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\CURLTargets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\curl\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfig.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonConfigVersion.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_jsonTargets.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\openssl\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\postgresql\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\Users\maver\vcpkg\scripts\buildsystems\vcpkg.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">A:\TelegramQRBot\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="A:\TelegramQRBot\src\Bot\BotHandler.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\Bot\BotHandler.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\Config.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\Config.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\Debug\Logger.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\Debug\Logger.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\Main.cpp" />
+    <ClCompile Include="A:\TelegramQRBot\src\QRCodeGenerator\qrcodegen.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\QRCodeGenerator\qrcodegen.hpp" />
+    <ClCompile Include="A:\TelegramQRBot\src\Utils\Utils.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\Utils\Utils.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\Utils\stb_image.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\Utils\stb_image_write.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\Valdiator\valdiator.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\Valdiator\valdiator.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\Api.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\Api.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\Bot.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\Bot.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\EventBroadcaster.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\EventHandler.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\EventHandler.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\TgException.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\TgException.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\TgTypeParser.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\TgTypeParser.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\export.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\net\BoostHttpOnlySslClient.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\BoostHttpOnlySslClient.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\net\CurlHttpClient.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\CurlHttpClient.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\HttpClient.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\net\HttpParser.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\HttpParser.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\HttpReqArg.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\HttpServer.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\net\TgLongPoll.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\TgLongPoll.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\TgWebhookLocalServer.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\TgWebhookServer.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\TgWebhookTcpServer.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\net\Url.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\Url.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\tgbot.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\tools\FileTools.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\tools\FileTools.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\tools\StringTools.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\tools\StringTools.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Animation.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Audio.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Birthdate.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommand.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScope.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScope.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeAllChatAdministrators.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeAllGroupChats.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeAllPrivateChats.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeChat.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeChatAdministrators.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeChatMember.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeDefault.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotDescription.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotName.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotShortDescription.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessConnection.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessIntro.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessLocation.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessMessagesDeleted.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessOpeningHours.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessOpeningHoursInterval.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\CallbackGame.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\CallbackQuery.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Chat.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatAdministratorRights.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoost.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostAdded.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostRemoved.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostSource.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostSource.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostSourceGiftCode.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostSourceGiveaway.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostSourcePremium.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostUpdated.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatInviteLink.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatJoinRequest.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatLocation.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\ChatMember.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMember.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberAdministrator.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberBanned.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberLeft.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberMember.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberOwner.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberRestricted.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberUpdated.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatPermissions.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatPhoto.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatShared.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChosenInlineResult.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Contact.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Dice.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Document.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\EncryptedCredentials.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\EncryptedPassportElement.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ExternalReplyInfo.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\File.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForceReply.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForumTopic.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForumTopicClosed.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForumTopicCreated.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForumTopicEdited.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForumTopicReopened.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Game.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GameHighScore.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GeneralForumTopicHidden.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GeneralForumTopicUnhidden.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GenericReply.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Giveaway.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GiveawayCompleted.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GiveawayCreated.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GiveawayWinners.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InaccessibleMessage.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineKeyboardButton.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineKeyboardMarkup.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQuery.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResult.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResult.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultArticle.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultAudio.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedAudio.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedDocument.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedGif.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedMpeg4Gif.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedPhoto.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedSticker.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedVideo.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedVoice.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultContact.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultDocument.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultGame.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultGif.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultLocation.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultMpeg4Gif.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultPhoto.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultVenue.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultVideo.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultVoice.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultsButton.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputContactMessageContent.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\InputFile.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputFile.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputInvoiceMessageContent.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputLocationMessageContent.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\InputMedia.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMedia.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMediaAnimation.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMediaAudio.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMediaDocument.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMediaPhoto.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMediaVideo.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\InputMessageContent.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMessageContent.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputSticker.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputTextMessageContent.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputVenueMessageContent.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Invoice.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\KeyboardButton.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\KeyboardButtonPollType.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\KeyboardButtonRequestChat.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\KeyboardButtonRequestUsers.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\LabeledPrice.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\LinkPreviewOptions.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Location.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\LoginUrl.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MaskPosition.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\MenuButton.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MenuButton.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MenuButtonCommands.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MenuButtonDefault.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MenuButtonWebApp.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Message.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageAutoDeleteTimerChanged.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageEntity.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageId.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\MessageOrigin.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageOrigin.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageOriginChannel.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageOriginChat.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageOriginHiddenUser.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageOriginUser.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageReactionCountUpdated.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageReactionUpdated.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\OrderInfo.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportData.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\PassportElementError.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementError.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorDataField.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorFile.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorFiles.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorFrontSide.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorReverseSide.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorSelfie.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorTranslationFile.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorTranslationFiles.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorUnspecified.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportFile.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PhotoSize.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Poll.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PollAnswer.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PollOption.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PreCheckoutQuery.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ProximityAlertTriggered.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReactionCount.h" />
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\ReactionType.cpp" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReactionType.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReactionTypeCustomEmoji.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReactionTypeEmoji.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReplyKeyboardMarkup.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReplyKeyboardRemove.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReplyParameters.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ResponseParameters.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\SentWebAppMessage.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\SharedUser.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ShippingAddress.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ShippingOption.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ShippingQuery.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Sticker.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\StickerSet.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Story.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\SuccessfulPayment.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\SwitchInlineQueryChosenChat.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\TextQuote.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Update.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\User.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\UserChatBoosts.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\UserProfilePhotos.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\UsersShared.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Venue.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Video.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\VideoChatEnded.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\VideoChatParticipantsInvited.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\VideoChatScheduled.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\VideoChatStarted.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\VideoNote.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Voice.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\WebAppData.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\WebAppInfo.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\WebhookInfo.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\WriteAccessAllowed.h" />
+    <Natvis Include="C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_json.natvis">
+    </Natvis>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="A:\TelegramQRBot\build\ZERO_CHECK.vcxproj">
+      <Project>{823C50EE-7233-39AF-A436-65C5832C1D8A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

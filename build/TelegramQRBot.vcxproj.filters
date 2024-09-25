@@ -1,0 +1,783 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="A:\TelegramQRBot\src\Bot\BotHandler.cpp">
+      <Filter>Bot</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\Config.cpp" />
+    <ClCompile Include="A:\TelegramQRBot\src\Debug\Logger.cpp">
+      <Filter>Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\Main.cpp" />
+    <ClCompile Include="A:\TelegramQRBot\src\QRCodeGenerator\qrcodegen.cpp">
+      <Filter>QRCodeGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\Utils\Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\Valdiator\valdiator.cpp">
+      <Filter>Valdiator</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\Api.cpp">
+      <Filter>tgbot</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\Bot.cpp">
+      <Filter>tgbot</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\EventHandler.cpp">
+      <Filter>tgbot</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\TgException.cpp">
+      <Filter>tgbot</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\TgTypeParser.cpp">
+      <Filter>tgbot</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\net\BoostHttpOnlySslClient.cpp">
+      <Filter>tgbot\net</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\net\CurlHttpClient.cpp">
+      <Filter>tgbot\net</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\net\HttpParser.cpp">
+      <Filter>tgbot\net</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\net\TgLongPoll.cpp">
+      <Filter>tgbot\net</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\net\Url.cpp">
+      <Filter>tgbot\net</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\tools\FileTools.cpp">
+      <Filter>tgbot\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\tools\StringTools.cpp">
+      <Filter>tgbot\tools</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScope.cpp">
+      <Filter>tgbot\types</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostSource.cpp">
+      <Filter>tgbot\types</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\ChatMember.cpp">
+      <Filter>tgbot\types</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResult.cpp">
+      <Filter>tgbot\types</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\InputFile.cpp">
+      <Filter>tgbot\types</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\InputMedia.cpp">
+      <Filter>tgbot\types</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\InputMessageContent.cpp">
+      <Filter>tgbot\types</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\MenuButton.cpp">
+      <Filter>tgbot\types</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\MessageOrigin.cpp">
+      <Filter>tgbot\types</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\PassportElementError.cpp">
+      <Filter>tgbot\types</Filter>
+    </ClCompile>
+    <ClCompile Include="A:\TelegramQRBot\src\tgbot\types\ReactionType.cpp">
+      <Filter>tgbot\types</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="A:\TelegramQRBot\src\Bot\BotHandler.h">
+      <Filter>Bot</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\Config.h" />
+    <ClInclude Include="A:\TelegramQRBot\src\Debug\Logger.h">
+      <Filter>Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\QRCodeGenerator\qrcodegen.hpp">
+      <Filter>QRCodeGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\Utils\stb_image.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\Utils\stb_image_write.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\Valdiator\valdiator.h">
+      <Filter>Valdiator</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\Api.h">
+      <Filter>tgbot</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\Bot.h">
+      <Filter>tgbot</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\EventBroadcaster.h">
+      <Filter>tgbot</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\EventHandler.h">
+      <Filter>tgbot</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\TgException.h">
+      <Filter>tgbot</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\TgTypeParser.h">
+      <Filter>tgbot</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\export.h">
+      <Filter>tgbot</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\BoostHttpOnlySslClient.h">
+      <Filter>tgbot\net</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\CurlHttpClient.h">
+      <Filter>tgbot\net</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\HttpClient.h">
+      <Filter>tgbot\net</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\HttpParser.h">
+      <Filter>tgbot\net</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\HttpReqArg.h">
+      <Filter>tgbot\net</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\HttpServer.h">
+      <Filter>tgbot\net</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\TgLongPoll.h">
+      <Filter>tgbot\net</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\TgWebhookLocalServer.h">
+      <Filter>tgbot\net</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\TgWebhookServer.h">
+      <Filter>tgbot\net</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\TgWebhookTcpServer.h">
+      <Filter>tgbot\net</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\net\Url.h">
+      <Filter>tgbot\net</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\tgbot.h">
+      <Filter>tgbot</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\tools\FileTools.h">
+      <Filter>tgbot\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\tools\StringTools.h">
+      <Filter>tgbot\tools</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Animation.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Audio.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Birthdate.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommand.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScope.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeAllChatAdministrators.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeAllGroupChats.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeAllPrivateChats.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeChat.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeChatAdministrators.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeChatMember.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotCommandScopeDefault.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotDescription.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotName.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BotShortDescription.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessConnection.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessIntro.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessLocation.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessMessagesDeleted.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessOpeningHours.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\BusinessOpeningHoursInterval.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\CallbackGame.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\CallbackQuery.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Chat.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatAdministratorRights.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoost.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostAdded.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostRemoved.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostSource.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostSourceGiftCode.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostSourceGiveaway.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostSourcePremium.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatBoostUpdated.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatInviteLink.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatJoinRequest.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatLocation.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMember.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberAdministrator.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberBanned.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberLeft.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberMember.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberOwner.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberRestricted.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatMemberUpdated.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatPermissions.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatPhoto.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChatShared.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ChosenInlineResult.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Contact.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Dice.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Document.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\EncryptedCredentials.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\EncryptedPassportElement.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ExternalReplyInfo.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\File.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForceReply.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForumTopic.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForumTopicClosed.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForumTopicCreated.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForumTopicEdited.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ForumTopicReopened.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Game.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GameHighScore.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GeneralForumTopicHidden.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GeneralForumTopicUnhidden.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GenericReply.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Giveaway.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GiveawayCompleted.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GiveawayCreated.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\GiveawayWinners.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InaccessibleMessage.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineKeyboardButton.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineKeyboardMarkup.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQuery.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResult.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultArticle.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultAudio.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedAudio.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedDocument.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedGif.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedMpeg4Gif.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedPhoto.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedSticker.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedVideo.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultCachedVoice.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultContact.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultDocument.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultGame.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultGif.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultLocation.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultMpeg4Gif.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultPhoto.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultVenue.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultVideo.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultVoice.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InlineQueryResultsButton.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputContactMessageContent.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputFile.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputInvoiceMessageContent.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputLocationMessageContent.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMedia.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMediaAnimation.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMediaAudio.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMediaDocument.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMediaPhoto.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMediaVideo.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputMessageContent.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputSticker.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputTextMessageContent.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\InputVenueMessageContent.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Invoice.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\KeyboardButton.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\KeyboardButtonPollType.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\KeyboardButtonRequestChat.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\KeyboardButtonRequestUsers.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\LabeledPrice.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\LinkPreviewOptions.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Location.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\LoginUrl.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MaskPosition.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MenuButton.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MenuButtonCommands.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MenuButtonDefault.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MenuButtonWebApp.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Message.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageAutoDeleteTimerChanged.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageEntity.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageId.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageOrigin.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageOriginChannel.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageOriginChat.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageOriginHiddenUser.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageOriginUser.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageReactionCountUpdated.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\MessageReactionUpdated.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\OrderInfo.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportData.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementError.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorDataField.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorFile.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorFiles.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorFrontSide.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorReverseSide.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorSelfie.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorTranslationFile.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorTranslationFiles.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportElementErrorUnspecified.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PassportFile.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PhotoSize.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Poll.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PollAnswer.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PollOption.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\PreCheckoutQuery.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ProximityAlertTriggered.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReactionCount.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReactionType.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReactionTypeCustomEmoji.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReactionTypeEmoji.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReplyKeyboardMarkup.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReplyKeyboardRemove.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ReplyParameters.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ResponseParameters.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\SentWebAppMessage.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\SharedUser.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ShippingAddress.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ShippingOption.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\ShippingQuery.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Sticker.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\StickerSet.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Story.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\SuccessfulPayment.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\SwitchInlineQueryChosenChat.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\TextQuote.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Update.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\User.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\UserChatBoosts.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\UserProfilePhotos.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\UsersShared.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Venue.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Video.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\VideoChatEnded.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\VideoChatParticipantsInvited.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\VideoChatScheduled.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\VideoChatStarted.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\VideoNote.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\Voice.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\WebAppData.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\WebAppInfo.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\WebhookInfo.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+    <ClInclude Include="A:\TelegramQRBot\src\tgbot\types\WriteAccessAllowed.h">
+      <Filter>tgbot\types</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="A:\TelegramQRBot\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="C:\Users\maver\vcpkg\installed\x64-windows\share\nlohmann_json\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Bot">
+      <UniqueIdentifier>{188D9108-FB35-31C3-8AF1-F3EAC490B853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Debug">
+      <UniqueIdentifier>{FBBCFD23-57BC-3B66-B247-CA8C886E5D10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QRCodeGenerator">
+      <UniqueIdentifier>{73224307-CBCD-373A-AAF0-D4469BA88756}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{875CE630-FC05-3E3B-A2B7-68065605E9F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Valdiator">
+      <UniqueIdentifier>{D32ABDE8-DD63-3A63-88F8-DB3593FE01FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tgbot">
+      <UniqueIdentifier>{806B93F0-A4A3-3954-8BF9-FA2141BB2F74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tgbot\net">
+      <UniqueIdentifier>{B0A63116-55EB-341E-AD5B-DD79F35A7CF2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tgbot\tools">
+      <UniqueIdentifier>{C2CF9BA1-E82F-3701-ABC0-3E63222A623B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tgbot\types">
+      <UniqueIdentifier>{53D699D8-865D-34DD-A752-06EF4AD09782}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

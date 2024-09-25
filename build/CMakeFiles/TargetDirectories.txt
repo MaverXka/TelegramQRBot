@@ -1,0 +1,3 @@
+A:/TelegramQRBot/build/CMakeFiles/TelegramQRBot.dir
+A:/TelegramQRBot/build/CMakeFiles/ALL_BUILD.dir
+A:/TelegramQRBot/build/CMakeFiles/ZERO_CHECK.dir

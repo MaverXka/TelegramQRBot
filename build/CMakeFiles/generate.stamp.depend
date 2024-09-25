@@ -1,0 +1,85 @@
+# CMake generation dependency list for this directory.
+A:/TelegramQRBot/CMakeLists.txt
+A:/TelegramQRBot/build/CMakeFiles/3.30.2/CMakeCCompiler.cmake
+A:/TelegramQRBot/build/CMakeFiles/3.30.2/CMakeCXXCompiler.cmake
+A:/TelegramQRBot/build/CMakeFiles/3.30.2/CMakeRCCompiler.cmake
+A:/TelegramQRBot/build/CMakeFiles/3.30.2/CMakeSystem.cmake
+A:/TelegramQRBot/build/CMakeFiles/cmake.verify_globs
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/CheckLibraryExists.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindBoost.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindOpenSSL.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindPostgreSQL.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindThreads.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/FindZLIB.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.30/Modules/SelectLibraryConfigurations.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost/BoostConfig.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost/BoostConfigVersion.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost/vcpkg-cmake-wrapper.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_assert/boost_assert-config-version.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_assert/boost_assert-config.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_assert/boost_assert-targets.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_config/boost_config-config-version.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_config/boost_config-config.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_config/boost_config-targets.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_headers/boost_headers-config-version.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_headers/boost_headers-config.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_headers/boost_headers-targets.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_mp11/boost_mp11-config-version.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_mp11/boost_mp11-config.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_mp11/boost_mp11-targets.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_predef/boost_predef-config-version.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_predef/boost_predef-config.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_predef/boost_predef-targets.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_system/boost_system-config-version.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_system/boost_system-config.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_system/boost_system-targets-debug.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_system/boost_system-targets-release.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_system/boost_system-targets.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_throw_exception/boost_throw_exception-config-version.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_throw_exception/boost_throw_exception-config.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_throw_exception/boost_throw_exception-targets.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_variant2/boost_variant2-config-version.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_variant2/boost_variant2-config.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_variant2/boost_variant2-targets.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_winapi/boost_winapi-config-version.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_winapi/boost_winapi-config.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/boost_winapi/boost_winapi-targets.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/curl/CURLConfig.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/curl/CURLConfigVersion.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/curl/CURLTargets-debug.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/curl/CURLTargets-release.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/curl/CURLTargets.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/curl/vcpkg-cmake-wrapper.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfig.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_jsonConfigVersion.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/nlohmann_json/nlohmann_jsonTargets.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/openssl/vcpkg-cmake-wrapper.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/postgresql/vcpkg-cmake-wrapper.cmake
+C:/Users/maver/vcpkg/installed/x64-windows/share/zlib/vcpkg-cmake-wrapper.cmake
+C:/Users/maver/vcpkg/scripts/buildsystems/vcpkg.cmake
